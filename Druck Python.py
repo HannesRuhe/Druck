@@ -1,14 +1,9 @@
 # Variabel definieren
 
-# Bar in PSI und Pascal
-umrechnungsfaktor14 = 14.5037738
-umrechnungsfaktor100000 = 100000
-# PSI in Pascal und Bar
-umrechnungsfaktor6894 = 6894.75729
-umrechnungsfaktor14 = 14.5037738
-# Pascal in Bar und PSI
-umrechnungsfaktor100000 = 100000
-umrechnungsfaktor6894 = 6894.75729
+# Umrechnungsfaktoren:3
+umrechnungsfaktor14 = 14.5037738   # Bar <> PSI
+umrechnungsfaktor6894 = 6894.75729 # PSI <> Pascal
+umrechnungsfaktor100000 = 100000   # Pascal <> Bar
 
 # while-Schleife
 eingabeJaNein = 1
