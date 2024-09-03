@@ -10,10 +10,10 @@ eingabeJaNein = 1
 while eingabeJaNein == 1:
 
 # Auswahl Startvariable
-    wahl = input("gib eine Auswahl zwischen Bar, PSI oder Pascal an: ")
+    wahl = input("gib eine Auswahl zwischen Bar, PSI oder Pascal an: ").upper()
     
 # Umrechnung von Bar in PSI und Pascal    
-    if wahl == "Bar":
+    if wahl == "BAR":
         inputBar = float(input("Gib den Wert in Bar an: "))
         outputPSI = inputBar * umrechnungsfaktor14
         print(inputBar,"Bar sind",outputPSI,"PSI")
@@ -29,7 +29,7 @@ while eingabeJaNein == 1:
         print(inputPSI,"PSI sind",outputBar,"Bar")
     
 # Umrechnung von Pascal in Bar und PSI
-    elif wahl == "Pascal":
+    elif wahl == "PASCAL":
         inputPascal = float(input("Gib den Wert in Pascal an: "))
         outputBar = inputPascal / umrechnungsfaktor100000
         print(inputPascal,"Pascal sind",outputBar,"Bar")
@@ -38,8 +38,8 @@ while eingabeJaNein == 1:
 
 
 # Sprung zum Anfang (while-Schleife)
-    neueEingabe = input("Willst du eine neue Umrechnung machen? Ja oder Nein? ")
-    if neueEingabe == "Ja":
+    neueEingabe = input("Willst du eine neue Umrechnung machen? Ja oder Nein? ").upper()
+    if neueEingabe == "JA":
         eingabeJaNein = 1
-    elif neueEingabe == "Nein":
+    elif neueEingabe == "NEIN":
         eingabeJaNein = 0
